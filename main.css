@@ -1,0 +1,131 @@
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+*,*:before,*:after {box-sizing:inherit;margin:0;padding:0;}
+.flex {display: flex;}
+body {
+	background-color: hsl(225, 100%, 94%);
+	padding: 70px 20px;
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url(images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+}
+@media (min-width: 768px) {
+	body {
+		background-image: url(images/pattern-background-desktop.svg);
+		background-size: initial;
+	}
+}
+main {
+	border-radius: 20px;
+	background-color: #fff;
+	width: 100%;
+	min-width: 300px;
+	max-width: 375px;
+	margin: 0 auto;
+	box-shadow:0px 26px 50px -22px rgba(0,0,0,0.15)
+}
+@media (min-width: 768px) {
+	main {
+		max-width: 430px;
+	}
+}
+#hero {
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+.content {
+	padding: 30px;
+}
+.inf {
+	text-align: center;
+}
+.inf h1{
+	margin-bottom: 17px;
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	font-size: 27px;
+}
+.inf p {
+	margin-bottom: 25px;
+	line-height: 25px;
+	padding: 0 25px;
+}
+.summary {
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 15px;
+	padding: 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+h2 {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	font-size: 1em;
+}
+p {
+	color: hsl(224, 23%, 55%);
+}
+.summary .change {
+	flex-grow: .55;
+	text-align: right;
+}
+.summary .change a {
+	font-weight: 600;
+	color: #3829e0;
+}
+.summary .change a:hover {
+	text-decoration: none;
+}
+.payment {
+	text-align: center;
+	margin-top: 25px;
+}
+.payment a {
+	display: inline-block;
+}
+.payment a:first-child {
+	width: 100%;
+	color: #fff;
+	padding: 16px 0;
+	background-color: #3829e0;
+	border-radius: 15px;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: .2px;
+	font-size: 15px;
+	transition: all ease .2s;
+	box-shadow: 5px 24px 22px -4px rgba(130,130,130,0.33)
+;
+}
+.payment a:first-child:hover {
+	background-color: #766cf1;
+}
+.payment a:last-child {
+	margin-top: 25px;
+	color: hsl(224, 23%, 55%);
+	font-weight: 900;
+	text-decoration: none;
+
+}
+.payment a:last-child:hover {
+	color: hsl(223, 47%, 23%);
+}
+footer {
+	margin-top: 35px;
+}
+footer div p {
+	font-size: 1.2em;
+}
+footer div p:first-child {
+	margin-bottom: 5px;
+}
+footer div p a {
+	color: #3829e0;
+	font-weight: 600;
+}
+.attribution { font-size: 11px; text-align: center; }
